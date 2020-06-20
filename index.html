@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <style>
+      #banner {
+        height: 60vh;
+      }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-warning shadow-sm navbar-light">
+      <div class="navbar-brand">
+        <h3>My Website</h3>
+      </div>
+      <button
+        class="btn navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navheader"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse float-right d-flex flex-row-reverse"
+        id="navheader"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Shop </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Product </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> About </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Contact Us </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="banner" class="container text-center">
+      <p class="display-3 shadow-sm mt-4">
+        Job Portal
+      </p>
+      <p class="blockquote">
+        Find jobs around you.
+      </p>
+    </div>
+    <footer
+      class="container-fluid bg-warning text-dark text-white mt-5 text-center"
+    >
+      <div class="blockquote">
+        <p class="mb-0">Job Portal website.</p>
+        <div class="blockquote-footer">
+          Copyright 2020, Abdul Wakeel Tera Future Inc
+        </div>
+      </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  </body>
+  <script>
+    const button = document.querySelector(".navbar-toggler")
+    button.addEventListener("click", function () {
+      const nav = document.querySelector(button.getAttribute("data-target"))
+      nav.style.display = nav.style.display == "block" ? "none" : "block"
+    })
+  </script>
+</html>
