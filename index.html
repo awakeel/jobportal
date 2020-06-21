@@ -21,7 +21,16 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
-
+    <style>
+      a {
+        transition: color 0.2s ease-out;
+        color: #008bcc;
+        text-decoration: none;
+      }
+      .light-grey {
+        background-color: #f1f1f1;
+      }
+    </style>
     <title>Hello, world!</title>
   </head>
   <body>
@@ -70,699 +79,166 @@
     </div>
     <div class="row">
       <div class="col-md-3">
-        <div class="container mt-5">
-          <div class="card card-body shadow">
-            <div class="text-left">
-              <h5>Categories</h5>
-              <div class="form-group">
-                <input
-                  type="checkbox"
-                  class="form-check-input text-danger"
-                  id="check"
-                />
-                <label for="check" class="form-check-label"> Group Id 1</label>
-              </div>
-            </div>
-            <div class="form-group text-left">
-              <label>Location</label>
-              <select class="form-control">
-                <option>First value</option>
-                <option>First value</option>
-                <option>First value</option>
-              </select>
-            </div>
-            <div class="form-group text-left">
-              <label>Category</label>
-              <select class="form-control">
-                <option>First value</option>
-                <option>First value</option>
-                <option>First value</option>
-              </select>
-            </div>
-          </div>
+        <div class="container-fluid">
+          <ul class="list-group border-right-0">
+            <li class="list-group-item">
+              <h6>Categories</h6>
+              <p class="text-muted">All</p>
+              <ul class="list-unstyled">
+                <li><a href="#">Authenication Service</a></li>
+                <li><a href="#">IOT Devices</a></li>
+                <li><a href="#">Machine Learning</a></li>
+              </ul>
+            </li>
+            <li class="list-group-item">
+              <h6>Tags</h6>
+              <form>
+                <div>
+                  <input type="checkbox" class="form-check form-check-inline" />
+                  <label class="">Android & Phone </label>
+                </div>
+                <div>
+                  <input type="checkbox" class="form-check form-check-inline" />
+                  <label class="">IOS & Iphone </label>
+                </div>
+                <div>
+                  <input type="checkbox" class="form-check form-check-inline" />
+                  <label class="">Security </label>
+                </div>
+                <div>
+                  <input type="checkbox" class="form-check form-check-inline" />
+                  <label class="">OAuth2 </label>
+                </div>
+              </form>
+            </li>
+            <li class="list-group-item">
+              <h6>Contributors</h6>
+              <p class="text-muted">All</p>
+              <ul class="list-unstyled">
+                <li><a href="#">Abdul Wakeel</a></li>
+                <li><a href="#">Syed Hammad Subtain</a></li>
+                <li><a href="#">Qasim Waqar</a></li>
+              </ul>
+            </li>
+            <li class="list-group-item">
+              <h6>Back to Communities</h6>
+              <form>
+                <div>
+                  <input type="checkbox" class="form-check form-check-inline" />
+                  <label class="">All </label>
+                </div>
+                <div>
+                  <input type="checkbox" class="form-check form-check-inline" />
+                  <label class="">Yes </label>
+                </div>
+                <div>
+                  <input type="checkbox" class="form-check form-check-inline" />
+                  <label class="">No </label>
+                </div>
+              </form>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="col-md-9">
-        <div class="container mt-5">
-          <div class="card card-body shadow mb-2">
-            <div class="row">
-              <div class="col-md-10">
-                <div class="media">
-                  <img
-                    src="http://localhost:4200/assets/tmp/img/avatar.jpg"
-                    style="width: 50px;"
-                    class="mr-3"
-                    alt="..."
-                  />
 
-                  <div class="media-body">
-                    <div class="font-weight-bold btn-link media-title">
-                      Heading 1
-                    </div>
-                    <ul class="list-inline mt-1 mb-1">
-                      <li class="list-inline-item">
-                        <a class="text-muted"> Mobile </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a class="text-reset">Phone </a>
-                      </li>
-                    </ul>
-                    <p class="text-justify">
-                      Cras sit amet nibh libero, in gravida nulla. Nulla vel
-                      metus scelerisque ante sollicitudin. Cras purus odio,
-                      vestibulum
-                    </p>
-                    <ul class="list-inline list-inline-dotted mb-0">
-                      <li class="list-inline-item">
-                        All items from
-                        <a href="#" data-abc="true">Mobile point</a>
-                      </li>
-                      <li class="list-inline-item">
-                        Add to <a href="#" data-abc="true">wishlist</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="mt-1 col-md-2 text-center">
-                <h3 class="font-weight-semibold text-danger">$499.00</h3>
-                <div class="text-muted">
-                  Sold Earlier twice
-                </div>
-                <div class="mt-2">
-                  <button class="btn btn-danger">Add to cart</button>
-                </div>
-              </div>
-            </div>
+      <div class="col-md-9 text-left">
+        <div class="result">
+          <div class="d-inline-block">
+            <p class="font-weight-bolder">
+              Showing Total Projects <span class="text-muted">(299)</span>
+            </p>
           </div>
-          <div class="card card-body shadow mb-2">
-            <div class="row">
-              <div class="col-md-10">
-                <div class="media">
-                  <img
-                    src="http://localhost:4200/assets/tmp/img/avatar.jpg"
-                    style="width: 50px;"
-                    class="mr-3"
-                    alt="..."
-                  />
-
-                  <div class="media-body">
-                    <div class="font-weight-bold btn-link media-title">
-                      Heading 1
-                    </div>
-                    <ul class="list-inline mt-1 mb-1">
-                      <li class="list-inline-item">
-                        <a class="text-muted"> Mobile </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a class="text-reset">Phone </a>
-                      </li>
-                    </ul>
-                    <p class="text-justify">
-                      Cras sit amet nibh libero, in gravida nulla. Nulla vel
-                      metus scelerisque ante sollicitudin. Cras purus odio,
-                      vestibulum
-                    </p>
-                    <ul class="list-inline list-inline-dotted mb-0">
-                      <li class="list-inline-item">
-                        All items from
-                        <a href="#" data-abc="true">Mobile point</a>
-                      </li>
-                      <li class="list-inline-item">
-                        Add to <a href="#" data-abc="true">wishlist</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <h3 class="font-weight-semibold text-danger">$499.00</h3>
-                <div class="text-muted">
-                  Sold Earlier twice
-                </div>
-                <div class="mt-2">
-                  <button class="btn btn-danger">Add to cart</button>
-                </div>
-              </div>
-            </div>
+          <div class="d-inline-block float-right form-group">
+            <select class="form-control-sm form-control custom-control-inline">
+              <option>Sort by</option>
+              <option>Latest</option>
+              <option>Old</option>
+            </select>
           </div>
-          <div class="card card-body shadow mb-2">
+        </div>
+        <div class="container border-top">
+          <div
+            class="mb-1 border-top-0 border-right-0 border-left-0 border-bottom"
+          >
             <div class="row">
-              <div class="col-md-10">
+              <div class="col">
                 <div class="media">
-                  <img
-                    src="http://localhost:4200/assets/tmp/img/avatar.jpg"
-                    style="width: 50px;"
-                    class="mr-3"
-                    alt="..."
-                  />
-
                   <div class="media-body">
-                    <div class="font-weight-bold btn-link media-title">
-                      Heading 1
+                    <div class="font-weight-bold">
+                      <a href="#"> Spider Chart (Compass) </a>
+                      <img
+                        src="https://d7umqicpi7263.cloudfront.net/img/product/ef297a90-3ad0-4674-83b4-7f0ec07c39bb/7463ad51-63cd-4a6a-af3e-ddead7646029.png"
+                        style="width: 120px;"
+                        class="mr-3 img-thumbnail border-0 float-right"
+                        alt="..."
+                      />
                     </div>
                     <ul class="list-inline mt-1 mb-1">
                       <li class="list-inline-item">
-                        <a class="text-muted"> Mobile </a>
+                        <a class="text-muted">
+                          Creation date:
+                        </a>
+                        <span class="text-dark">
+                          <i class="fa fa-clock-o"></i> 2 June 2020</span
+                        >
                       </li>
                       <li class="list-inline-item">
-                        <a class="text-reset">Phone </a>
+                        <span class="text-muted">Contributed by </span
+                        ><a href="#"
+                          ><i class="fa fa-user-o"></i> Abdul Wakeel</a
+                        >
                       </li>
                     </ul>
-                    <p class="text-justify">
+                    <div class="border-bottom">
+                      Reviews:
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <a href="#" class="text-muted"> (20)</a>
+                      <div class="float-right d-inline text-truncate">
+                        <i class="fa fa-tags"></i><span> Tags: </span>
+
+                        <span>
+                          <a class="badge badge-pill text-muted rounded mr-1">
+                            .NET
+                          </a>
+                          <a class="badge badge-pill text-muted rounded mr-1">
+                            Android
+                          </a></span
+                        >
+                        <a class="badge badge-pill text-muted rounded mr-1">
+                          .NET
+                        </a>
+                        <a class="badge badge-pill text-muted rounded mr-1">
+                          Android
+                        </a>
+                      </div>
+                    </div>
+                    <p class="text-justify mt-2">
                       Cras sit amet nibh libero, in gravida nulla. Nulla vel
                       metus scelerisque ante sollicitudin. Cras purus odio,
                       vestibulum
                     </p>
-                    <ul class="list-inline list-inline-dotted mb-0">
-                      <li class="list-inline-item">
-                        All items from
-                        <a href="#" data-abc="true">Mobile point</a>
-                      </li>
-                      <li class="list-inline-item">
-                        Add to <a href="#" data-abc="true">wishlist</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <h3 class="font-weight-semibold text-danger">$499.00</h3>
-                <div class="text-muted">
-                  Sold Earlier twice
-                </div>
-                <div class="mt-2">
-                  <button class="btn btn-danger">Add to cart</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card card-body shadow mb-2">
-            <div class="row">
-              <div class="col-md-10">
-                <div class="media">
-                  <img
-                    src="http://localhost:4200/assets/tmp/img/avatar.jpg"
-                    style="width: 50px;"
-                    class="mr-3"
-                    alt="..."
-                  />
 
-                  <div class="media-body">
-                    <div class="font-weight-bold btn-link media-title">
-                      Heading 1
-                    </div>
-                    <ul class="list-inline mt-1 mb-1">
-                      <li class="list-inline-item">
-                        <a class="text-muted"> Mobile </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a class="text-reset">Phone </a>
-                      </li>
-                    </ul>
-                    <p class="text-justify">
-                      Cras sit amet nibh libero, in gravida nulla. Nulla vel
-                      metus scelerisque ante sollicitudin. Cras purus odio,
-                      vestibulum
-                    </p>
                     <ul class="list-inline list-inline-dotted mb-0">
                       <li class="list-inline-item">
-                        All items from
-                        <a href="#" data-abc="true">Mobile point</a>
+                        <a href="#"><i class="fa fa-git"></i> Git url </a>
                       </li>
                       <li class="list-inline-item">
-                        Add to <a href="#" data-abc="true">wishlist</a>
+                        <a href="#"
+                          ><i class="fa fa-gear"></i> Artifactory url
+                        </a>
                       </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <h3 class="font-weight-semibold text-danger">$499.00</h3>
-                <div class="text-muted">
-                  Sold Earlier twice
-                </div>
-                <div class="mt-2">
-                  <button class="btn btn-danger">Add to cart</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card card-body shadow mb-2">
-            <div class="row">
-              <div class="col-md-10">
-                <div class="media">
-                  <img
-                    src="http://localhost:4200/assets/tmp/img/avatar.jpg"
-                    style="width: 50px;"
-                    class="mr-3"
-                    alt="..."
-                  />
 
-                  <div class="media-body">
-                    <div class="font-weight-bold btn-link media-title">
-                      Heading 1
-                    </div>
-                    <ul class="list-inline mt-1 mb-1">
                       <li class="list-inline-item">
-                        <a class="text-muted"> Mobile </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a class="text-reset">Phone </a>
-                      </li>
-                    </ul>
-                    <p class="text-justify">
-                      Cras sit amet nibh libero, in gravida nulla. Nulla vel
-                      metus scelerisque ante sollicitudin. Cras purus odio,
-                      vestibulum
-                    </p>
-                    <ul class="list-inline list-inline-dotted mb-0">
-                      <li class="list-inline-item">
-                        All items from
-                        <a href="#" data-abc="true">Mobile point</a>
-                      </li>
-                      <li class="list-inline-item">
-                        Add to <a href="#" data-abc="true">wishlist</a>
+                        <a href="#">
+                          <i class="fa fa-book"></i> Documentation
+                        </a>
                       </li>
                     </ul>
                   </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <h3 class="font-weight-semibold text-danger">$499.00</h3>
-                <div class="text-muted">
-                  Sold Earlier twice
-                </div>
-                <div class="mt-2">
-                  <button class="btn btn-danger">Add to cart</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card card-body shadow mb-2">
-            <div class="row">
-              <div class="col-md-10">
-                <div class="media">
-                  <img
-                    src="http://localhost:4200/assets/tmp/img/avatar.jpg"
-                    style="width: 50px;"
-                    class="mr-3"
-                    alt="..."
-                  />
-
-                  <div class="media-body">
-                    <div class="font-weight-bold btn-link media-title">
-                      Heading 1
-                    </div>
-                    <ul class="list-inline mt-1 mb-1">
-                      <li class="list-inline-item">
-                        <a class="text-muted"> Mobile </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a class="text-reset">Phone </a>
-                      </li>
-                    </ul>
-                    <p class="text-justify">
-                      Cras sit amet nibh libero, in gravida nulla. Nulla vel
-                      metus scelerisque ante sollicitudin. Cras purus odio,
-                      vestibulum
-                    </p>
-                    <ul class="list-inline list-inline-dotted mb-0">
-                      <li class="list-inline-item">
-                        All items from
-                        <a href="#" data-abc="true">Mobile point</a>
-                      </li>
-                      <li class="list-inline-item">
-                        Add to <a href="#" data-abc="true">wishlist</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <h3 class="font-weight-semibold text-danger">$499.00</h3>
-                <div class="text-muted">
-                  Sold Earlier twice
-                </div>
-                <div class="mt-2">
-                  <button class="btn btn-danger">Add to cart</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card card-body shadow mb-2">
-            <div class="row">
-              <div class="col-md-10">
-                <div class="media">
-                  <img
-                    src="http://localhost:4200/assets/tmp/img/avatar.jpg"
-                    style="width: 50px;"
-                    class="mr-3"
-                    alt="..."
-                  />
-
-                  <div class="media-body">
-                    <div class="font-weight-bold btn-link media-title">
-                      Heading 1
-                    </div>
-                    <ul class="list-inline mt-1 mb-1">
-                      <li class="list-inline-item">
-                        <a class="text-muted"> Mobile </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a class="text-reset">Phone </a>
-                      </li>
-                    </ul>
-                    <p class="text-justify">
-                      Cras sit amet nibh libero, in gravida nulla. Nulla vel
-                      metus scelerisque ante sollicitudin. Cras purus odio,
-                      vestibulum
-                    </p>
-                    <ul class="list-inline list-inline-dotted mb-0">
-                      <li class="list-inline-item">
-                        All items from
-                        <a href="#" data-abc="true">Mobile point</a>
-                      </li>
-                      <li class="list-inline-item">
-                        Add to <a href="#" data-abc="true">wishlist</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <h3 class="font-weight-semibold text-danger">$499.00</h3>
-                <div class="text-muted">
-                  Sold Earlier twice
-                </div>
-                <div class="mt-2">
-                  <button class="btn btn-danger">Add to cart</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card card-body shadow mb-2">
-            <div class="row">
-              <div class="col-md-10">
-                <div class="media">
-                  <img
-                    src="http://localhost:4200/assets/tmp/img/avatar.jpg"
-                    style="width: 50px;"
-                    class="mr-3"
-                    alt="..."
-                  />
-
-                  <div class="media-body">
-                    <div class="font-weight-bold btn-link media-title">
-                      Heading 1
-                    </div>
-                    <ul class="list-inline mt-1 mb-1">
-                      <li class="list-inline-item">
-                        <a class="text-muted"> Mobile </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a class="text-reset">Phone </a>
-                      </li>
-                    </ul>
-                    <p class="text-justify">
-                      Cras sit amet nibh libero, in gravida nulla. Nulla vel
-                      metus scelerisque ante sollicitudin. Cras purus odio,
-                      vestibulum
-                    </p>
-                    <ul class="list-inline list-inline-dotted mb-0">
-                      <li class="list-inline-item">
-                        All items from
-                        <a href="#" data-abc="true">Mobile point</a>
-                      </li>
-                      <li class="list-inline-item">
-                        Add to <a href="#" data-abc="true">wishlist</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <h3 class="font-weight-semibold text-danger">$499.00</h3>
-                <div class="text-muted">
-                  Sold Earlier twice
-                </div>
-                <div class="mt-2">
-                  <button class="btn btn-danger">Add to cart</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card card-body shadow mb-2">
-            <div class="row">
-              <div class="col-md-10">
-                <div class="media">
-                  <img
-                    src="http://localhost:4200/assets/tmp/img/avatar.jpg"
-                    style="width: 50px;"
-                    class="mr-3"
-                    alt="..."
-                  />
-
-                  <div class="media-body">
-                    <div class="font-weight-bold btn-link media-title">
-                      Heading 1
-                    </div>
-                    <ul class="list-inline mt-1 mb-1">
-                      <li class="list-inline-item">
-                        <a class="text-muted"> Mobile </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a class="text-reset">Phone </a>
-                      </li>
-                    </ul>
-                    <p class="text-justify">
-                      Cras sit amet nibh libero, in gravida nulla. Nulla vel
-                      metus scelerisque ante sollicitudin. Cras purus odio,
-                      vestibulum
-                    </p>
-                    <ul class="list-inline list-inline-dotted mb-0">
-                      <li class="list-inline-item">
-                        All items from
-                        <a href="#" data-abc="true">Mobile point</a>
-                      </li>
-                      <li class="list-inline-item">
-                        Add to <a href="#" data-abc="true">wishlist</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <h3 class="font-weight-semibold text-danger">$499.00</h3>
-                <div class="text-muted">
-                  Sold Earlier twice
-                </div>
-                <div class="mt-2">
-                  <button class="btn btn-danger">Add to cart</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card card-body shadow mb-2">
-            <div class="row">
-              <div class="col-md-10">
-                <div class="media">
-                  <img
-                    src="http://localhost:4200/assets/tmp/img/avatar.jpg"
-                    style="width: 50px;"
-                    class="mr-3"
-                    alt="..."
-                  />
-
-                  <div class="media-body">
-                    <div class="font-weight-bold btn-link media-title">
-                      Heading 1
-                    </div>
-                    <ul class="list-inline mt-1 mb-1">
-                      <li class="list-inline-item">
-                        <a class="text-muted"> Mobile </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a class="text-reset">Phone </a>
-                      </li>
-                    </ul>
-                    <p class="text-justify">
-                      Cras sit amet nibh libero, in gravida nulla. Nulla vel
-                      metus scelerisque ante sollicitudin. Cras purus odio,
-                      vestibulum
-                    </p>
-                    <ul class="list-inline list-inline-dotted mb-0">
-                      <li class="list-inline-item">
-                        All items from
-                        <a href="#" data-abc="true">Mobile point</a>
-                      </li>
-                      <li class="list-inline-item">
-                        Add to <a href="#" data-abc="true">wishlist</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <h3 class="font-weight-semibold text-danger">$499.00</h3>
-                <div class="text-muted">
-                  Sold Earlier twice
-                </div>
-                <div class="mt-2">
-                  <button class="btn btn-danger">Add to cart</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card card-body shadow mb-2">
-            <div class="row">
-              <div class="col-md-10">
-                <div class="media">
-                  <img
-                    src="http://localhost:4200/assets/tmp/img/avatar.jpg"
-                    style="width: 50px;"
-                    class="mr-3"
-                    alt="..."
-                  />
-
-                  <div class="media-body">
-                    <div class="font-weight-bold btn-link media-title">
-                      Heading 1
-                    </div>
-                    <ul class="list-inline mt-1 mb-1">
-                      <li class="list-inline-item">
-                        <a class="text-muted"> Mobile </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a class="text-reset">Phone </a>
-                      </li>
-                    </ul>
-                    <p class="text-justify">
-                      Cras sit amet nibh libero, in gravida nulla. Nulla vel
-                      metus scelerisque ante sollicitudin. Cras purus odio,
-                      vestibulum
-                    </p>
-                    <ul class="list-inline list-inline-dotted mb-0">
-                      <li class="list-inline-item">
-                        All items from
-                        <a href="#" data-abc="true">Mobile point</a>
-                      </li>
-                      <li class="list-inline-item">
-                        Add to <a href="#" data-abc="true">wishlist</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <h3 class="font-weight-semibold text-danger">$499.00</h3>
-                <div class="text-muted">
-                  Sold Earlier twice
-                </div>
-                <div class="mt-2">
-                  <button class="btn btn-danger">Add to cart</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card card-body shadow mb-2">
-            <div class="row">
-              <div class="col-md-10">
-                <div class="media">
-                  <img
-                    src="http://localhost:4200/assets/tmp/img/avatar.jpg"
-                    style="width: 50px;"
-                    class="mr-3"
-                    alt="..."
-                  />
-
-                  <div class="media-body">
-                    <div class="font-weight-bold btn-link media-title">
-                      Heading 1
-                    </div>
-                    <ul class="list-inline mt-1 mb-1">
-                      <li class="list-inline-item">
-                        <a class="text-muted"> Mobile </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a class="text-reset">Phone </a>
-                      </li>
-                    </ul>
-                    <p class="text-justify">
-                      Cras sit amet nibh libero, in gravida nulla. Nulla vel
-                      metus scelerisque ante sollicitudin. Cras purus odio,
-                      vestibulum
-                    </p>
-                    <ul class="list-inline list-inline-dotted mb-0">
-                      <li class="list-inline-item">
-                        All items from
-                        <a href="#" data-abc="true">Mobile point</a>
-                      </li>
-                      <li class="list-inline-item">
-                        Add to <a href="#" data-abc="true">wishlist</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <h3 class="font-weight-semibold text-danger">$499.00</h3>
-                <div class="text-muted">
-                  Sold Earlier twice
-                </div>
-                <div class="mt-2">
-                  <button class="btn btn-danger">Add to cart</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card card-body shadow mb-2">
-            <div class="row">
-              <div class="col-md-10">
-                <div class="media">
-                  <img
-                    src="http://localhost:4200/assets/tmp/img/avatar.jpg"
-                    style="width: 50px;"
-                    class="mr-3"
-                    alt="..."
-                  />
-
-                  <div class="media-body">
-                    <div class="font-weight-bold btn-link media-title">
-                      Heading 1
-                    </div>
-                    <ul class="list-inline mt-1 mb-1">
-                      <li class="list-inline-item">
-                        <a class="text-muted"> Mobile </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a class="text-reset">Phone </a>
-                      </li>
-                    </ul>
-                    <p class="text-justify">
-                      Cras sit amet nibh libero, in gravida nulla. Nulla vel
-                      metus scelerisque ante sollicitudin. Cras purus odio,
-                      vestibulum
-                    </p>
-                    <ul class="list-inline list-inline-dotted mb-0">
-                      <li class="list-inline-item">
-                        All items from
-                        <a href="#" data-abc="true">Mobile point</a>
-                      </li>
-                      <li class="list-inline-item">
-                        Add to <a href="#" data-abc="true">wishlist</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <h3 class="font-weight-semibold text-danger">$499.00</h3>
-                <div class="text-muted">
-                  Sold Earlier twice
-                </div>
-                <div class="mt-2">
-                  <button class="btn btn-danger">Add to cart</button>
                 </div>
               </div>
             </div>
